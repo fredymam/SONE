@@ -8,8 +8,6 @@ public class Tutor {
 	public int telefono;
 	public String correo;
 	public String direccion;
-	
+	public String tuvieja;
 	
 }
-
-//Mana5
