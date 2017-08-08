@@ -1,10 +1,16 @@
 package logica;
 
-public class Persona {
+public abstract class Persona {
 	
-	public String nombre;
-	public String apellido;
-	public String correo;
-	public int dni;
-	public int telefono;
+	private String nombre;
+	private String apellido;
+	private String correo;
+	private int dni;
+	private int telefono;
+	
+	public Persona(String nombre, String apellido ,int dni){
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.dni = dni;
+	}
 }
