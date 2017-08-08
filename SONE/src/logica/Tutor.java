@@ -1,11 +1,11 @@
 package logica;
 
 public class Tutor {
-	public char Nombre;	
-	public char Apellido;
-	public String Email;
-	public int Telefono;
-	public int Dni;
+	protected char Nombre;	
+	protected char Apellido;
+	protected String Email;
+	protected int Telefono;
+	protected int Dni;
 	
 	
 }
