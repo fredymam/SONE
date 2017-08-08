@@ -2,7 +2,11 @@ package logica;
 
 public class Celador {
 
-	public char Nombre;
-	public char Apellido;
+	protected char Nombre;
+	protected char Apellido;
 	
+	public Celador(){
+
+	}
+
 }
