@@ -1,12 +1,16 @@
 package logica;
 
 public class Alumno {
-	public char Nombre;	
-	public char Apellido;
-	public int Curso;
-	public String Division;
-	public String Turno;
-	public int Dni;
+	protected char Nombre;	
+	protected char Apellido;
+	protected int Curso;
+	protected String Division;
+	protected String Turno;
+	protected int Dni;
 	
+	public Alumno(){
+		
+		
+	}
 	
 }
