@@ -7,7 +7,7 @@ public abstract class Persona {
 	private String email;
 	private int tel;
 	
-	public Persona() {
+	public Persona(String nombre, String apellido, int DNI) {
 				
 	}
 
