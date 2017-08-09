@@ -2,9 +2,9 @@ package logica;
 
 public class Curso {
 	
-	private int numero_curso;
-	private String curso;
-	private String division;
+	protected int numero_curso;
+	protected int division;
+	protected String turno;
 	
 	public int getNumero_curso() {
 		return numero_curso;
@@ -12,17 +12,17 @@ public class Curso {
 	public void setNumero_curso(int numero_curso) {
 		this.numero_curso = numero_curso;
 	}
-	public String getCurso() {
-		return curso;
-	}
-	public void setCurso(String curso) {
-		this.curso = curso;
-	}
-	public String getDivision() {
+	public int getDivision() {
 		return division;
 	}
-	public void setDivision(String division) {
+	public void setDivision(int division) {
 		this.division = division;
+	}
+	public String getTurno() {
+		return turno;
+	}
+	public void setTurno(String turno) {
+		this.turno = turno;
 	}
 	
 }

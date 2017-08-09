@@ -2,11 +2,11 @@ package logica;
 
 public abstract class Persona {
 	
-	private String nombre;
-	private String apellido;
-	private String correo;
-	private int dni;
-	private int telefono;
+	protected String nombre;
+	protected String apellido;
+	protected String correo;
+	protected int dni;
+	protected int telefono;
 	
 	public Persona(String nombre, String apellido ,int dni){
 		this.nombre = nombre;
@@ -18,7 +18,7 @@ public abstract class Persona {
 		return this.nombre;
 	}
 	
-	public String getApllido(){
+	public String getApellido(){
 		return this.apellido;
 	}
 	
