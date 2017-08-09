@@ -13,4 +13,24 @@ public abstract class Persona {
 		this.apellido = apellido;
 		this.dni = dni;
 	}
+	
+	public String getNombre(){
+		return this.nombre;
+	}
+	
+	public String getApllido(){
+		return this.apellido;
+	}
+	
+	public String getCorreo(){
+		return this.correo;
+	}
+	
+	public int getDni(){
+		return this.dni;
+	}
+	
+	public int getTelefono(){
+		return this.telefono;
+	}
 }
