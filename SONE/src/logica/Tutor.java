@@ -1,6 +1,7 @@
 package logica;
 
-public class Tutor {
+public class Tutor extends Persona {
+	
 	protected char Nombre;	
 	protected char Apellido;
 	protected String Email;

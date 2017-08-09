@@ -1,6 +1,6 @@
 package logica;
 
-public class Celador {
+public class Celador extends Persona {
 
 	protected char Nombre;
 	protected char Apellido;
