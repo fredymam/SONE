@@ -4,6 +4,7 @@ public class Persona {
 
 	protected char Nombre;	
 	protected char Apellido;
+	
 		
 	
 	public Persona() {
