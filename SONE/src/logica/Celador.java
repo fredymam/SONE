@@ -4,11 +4,26 @@ public class Celador extends Persona {
 
 	protected char Nombre;
 	protected char Apellido;
-	protected String Notificar;
-	protected String Agregar;
-	protected String Modificar;
-	protected String Inscribir;
-	protected String Eliminar;
+	protected Curso curso;
+	
+	public Celador(){
+		curso = new Curso();
+	}
+	public String PromoverAlumno(){
+		curso.ListaAlumnos.get()cambiar()
+	}
+
+	public String ModificarAlumno(){
+		
+	}
+	
+	public String InscribirAlumno(){
+		
+	}
+	
+	public String EliminarAlumno(){
+		
+	}
 	
 	public char getNombre() {
 		return Nombre;
@@ -24,6 +39,4 @@ public class Celador extends Persona {
 	}
 	
 	
-	
-
 }

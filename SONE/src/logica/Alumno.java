@@ -11,8 +11,13 @@ public class Alumno extends Persona {
 	
 	public Alumno(){
 		
-		
-		
 	}
 	
+	public void CambiarCurso(Curso curso){
+		this.Curso = curso;
+	}
+	
+	
+		
+	}
 }

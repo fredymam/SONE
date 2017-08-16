@@ -7,7 +7,7 @@ public class Tutor extends Persona {
 	protected String Email;
 	protected int Telefono;
 	protected int Dni;
-	protected String Responder;
+	//protected String Responder;
 	
 	
 	public char getNombre() {
