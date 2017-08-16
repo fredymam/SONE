@@ -28,6 +28,10 @@ public abstract class Persona {
 		return this.correo;
 	}
 	
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+	
 	public int getDni(){
 		return this.dni;
 	}
