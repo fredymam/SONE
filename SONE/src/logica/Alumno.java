@@ -2,7 +2,7 @@ package logica;
 
 public class Alumno extends Persona{
 	
-	private int Curso;
+	private int CursoActual;
 	private int División;
 	private String Turno;
 	private int DNI_Tutor;
@@ -10,13 +10,17 @@ public class Alumno extends Persona{
 	public Alumno(String nombre,String apellido, int dni) {
 		super(nombre,apellido,dni);
 	}
-
-	public int getCurso() {
-		return Curso;
+	
+	public void cambiarCurso(int curso,int division){
+		
 	}
 
-	public void setCurso(int curso) {
-		Curso = curso;
+	public int getCursoActual() {
+		return CursoActual;
+	}
+
+	public void setCursoActual(int curso) {
+		CursoActual = curso;
 	}
 
 	public int getDivisión() {
