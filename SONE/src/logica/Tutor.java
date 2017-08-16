@@ -6,6 +6,7 @@ public class Tutor extends Persona {
 	protected char Apellido;
 	protected String Email;
 	protected int Telefono;
+	protected int Dni;
 	public char getNombre() {
 		return Nombre;
 	}
@@ -36,7 +37,6 @@ public class Tutor extends Persona {
 	public void setDni(int dni) {
 		Dni = dni;
 	}
-	protected int Dni;
 	
 
 }
