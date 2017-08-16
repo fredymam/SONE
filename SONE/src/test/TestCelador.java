@@ -7,7 +7,7 @@ public class TestCelador {
 		Celador c1;
 		c1 = new Celador("Celador1", "Celador", 41185839, "celador@celador.com");
 		
-		c1.crearAlumno("alumno", "alumno", 41094866);
+		c1.crearCurso(1, 1, "Mañana");
 	}
 
 }

@@ -1,31 +1,27 @@
 package logica;
 import java.util.ArrayList;
-import logica.Tutor;
-import logica.Alumno;
 import logica.Curso;
 
 public class Celador extends Persona {
 	
-	private Alumno alumno;
-	private ArrayList<Tutor> tutores;
 	private ArrayList<Curso> cursos;
 
 	public Celador(String nombre, String apellido, int dni, String correo) {
 		super(nombre, apellido, dni);
-		tutores = new ArrayList<Tutor>();
 		cursos = new ArrayList<Curso>();
 		setCorreo(correo);
 	}
 	
-	public void crearAlumno(String nombre, String apellido, int dni){
-		Alumno alumno = new Alumno(nombre, apellido, dni);
-		alumnoAlta(alumno);
+	// Metodo para crear un Curso
+	public void crearCurso(int numero_curso, int division, String turno){
+		Curso curso = new Curso(numero_curso, division, turno);
+		cursoAlta(curso);
 	}
 	
-	public void alumnoAlta(Alumno alumno){
-		System.out.println(alumno.getNombre());
-		System.out.println(alumno.getApellido());
-		System.out.println(alumno.getDni());
+	public void cursoAlta(Curso curso){
+		System.out.println(curso.getNumero_curso());
+		System.out.println(curso.getDivision());
+		System.out.println(curso.getTurno());
 	}
 	
 	public String enviarNotificacion(){
