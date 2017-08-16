@@ -5,10 +5,12 @@ public class Alumno extends Persona {
 	public Tutor tutor;
 	public Curso curso;
 	
-	public Alumno(String nombre, String apellido, int dni) {
-		super(nombre, apellido, dni);
+	public Alumno(String nombre, String apellido, int dni , String turno,int division,int numero_curso) {
+		super(nombre, apellido, dni, turno,division,numero_curso);
 	
 	}
+
+
 	
 }
 
@@ -18,3 +20,6 @@ public class Alumno extends Persona {
 		  -add alumnos.add(a1);//alumno.add(new Alumno('Nahuel');
 		  -size alumnos.size();
 		  -set alumnos.set(2,a2);*/
+/* 
+ public
+ */
