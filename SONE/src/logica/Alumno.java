@@ -22,6 +22,10 @@ public class Alumno extends Persona{
 	public void setCursoActual(int curso) {
 		CursoActual = curso;
 	}
+	
+	public void AsignarCurso(Curso c){
+		c.AgregarAlumno();
+	}
 
 	public int getDivisión() {
 		return División;
