@@ -4,7 +4,11 @@ public class Celador extends Persona {
 
 	protected char Nombre;
 	protected char Apellido;
-	
+	protected String Notificar;
+	protected String Agregar;
+	protected String Modificar;
+	protected String Inscribir;
+	protected String Eliminar;
 	
 	public char getNombre() {
 		return Nombre;
