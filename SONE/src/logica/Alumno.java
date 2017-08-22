@@ -2,29 +2,39 @@ package logica;
 
 public class Alumno extends Persona{
 	
-	private int CursoActual;
+	private Curso CursoActual;
 	private int División;
 	private String Turno;
-	private int DNI_Tutor;
+	private Tutor Tutor;
+	
 	
 	public Alumno(String nombre,String apellido, int dni) {
 		super(nombre,apellido,dni);
 	}
 	
-	public void cambiarCurso(int curso,int division){
-		
-	}
-
-	public int getCursoActual() {
-		return CursoActual;
-	}
-
-	public void setCursoActual(int curso) {
-		CursoActual = curso;
+	
+	public void asignarCurso(Curso c){
+		if(CursoActual != null){
+			CursoActual.Quitar(this);
+		}
+		CursoActual = c;
+		CursoActual.AgregarAlumno(this);
 	}
 	
-	public void AsignarCurso(Curso c){
-		c.AgregarAlumno();
+	public Tutor getTutor() {
+		return Tutor;
+	}
+
+	public void setTutor(Tutor tutor) {
+		Tutor = tutor;
+	}
+
+	public void setCursoActual(Curso cursoActual) {
+		CursoActual = cursoActual;
+	}
+
+	public Curso getCursoActual() {
+		return CursoActual;
 	}
 
 	public int getDivisión() {
@@ -43,12 +53,5 @@ public class Alumno extends Persona{
 		Turno = turno;
 	}
 
-	public int getDNI_Tutor() {
-		return DNI_Tutor;
-	}
-
-	public void setDNI_Tutor(int dNI_Tutor) {
-		DNI_Tutor = dNI_Tutor;
-	}
 
 }
