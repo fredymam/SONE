@@ -22,10 +22,13 @@ public class Alumno extends Persona {
 		
 	}
 	
-	public void EliminarCurso(Curso curso){
+	public void EliminarAlumno(Curso curso){
 		this.Curso = curso;
 	}
 	
+	public void ModificarAlumno(Curso curso){
+		this.Curso = curso;
+	}
 		
 	}
 
