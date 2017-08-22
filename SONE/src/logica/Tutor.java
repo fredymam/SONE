@@ -24,14 +24,19 @@ public class Tutor extends Persona {
 		return alumnos;
 	}
 	
-	private boolean notificar() {
-			
-		if (mensaje) {
-			return true;
-			enviarmensaje();
-		} 
-		else {
-			return false;
-		}
+	public String getNotifiacion() {
+		return notifiacion;
+	}
+
+	public void setNotifiacion(String notifiacion) {
+		this.notifiacion = notifiacion;
+	}
+
+	public boolean isMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(boolean mensaje) {
+		this.mensaje = mensaje;
 	}
 }
