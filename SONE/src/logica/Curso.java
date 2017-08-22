@@ -10,18 +10,16 @@ public class Curso {
 		this.numero_curso = numero_curso;
 		this.turno = turno;
 		this.division = division;
-		
 	}
 	
-	
 	public int getNumero_curso() {
-		return numero_curso;
+		return this.numero_curso;
 	}
 	public void setNumero_curso(int numero_curso) {
 		this.numero_curso = numero_curso;
 	}
 	public int getDivision() {
-		return division;
+		return this.division;
 	}
 	public void setDivision(int division) {
 		this.division = division;
@@ -30,7 +28,7 @@ public class Curso {
 		this.turno = turno;
 	}
 	public String getTurno() {
-		return turno;
+		return this.turno;
 	}
 	
 	
