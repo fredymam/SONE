@@ -10,7 +10,7 @@ public class Celador extends Persona {
 		curso = new Curso();
 	}
 	public String PromoverAlumno(){
-		curso.ListaAlumnos.get()cambiar()
+		curso.ListaAlumnos.get(Nombre, Apellido, curso);
 	}
 
 	public String ModificarAlumno(){
