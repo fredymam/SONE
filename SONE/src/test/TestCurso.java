@@ -4,7 +4,7 @@ import logica.Alumno;
 import logica.Celador;
 import logica.Curso;
 
-
+//c1.asignarc(t2);
 public class TestCurso {
 
 	public static void main(String[] args) {
@@ -24,6 +24,7 @@ public class TestCurso {
 		t1 = new Curso (1, 1, "Mañana");
 		
 	
+		
 		
 		Curso t2;
 		t2 = new Curso(1, 1, "Mañana");
