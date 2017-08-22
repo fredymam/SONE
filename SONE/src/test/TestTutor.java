@@ -8,7 +8,7 @@ public class TestTutor {
 		// TODO Auto-generated method stub
 		
 		Tutor t1;
-		t1 = new Tutor("Tutor", "Garca1", 456456, "correogmail" ,230215,);
+		t1 = new Tutor("Tutor", "Garca1", 456456, "correogmail" ,230215);
 		System.out.println(t1.getNombre());
 		System.out.println(t1.getApellido());
 		System.out.println(t1.getDni());
