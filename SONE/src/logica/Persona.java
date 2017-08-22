@@ -40,4 +40,9 @@ public abstract class Persona {
 		return this.telefono;
 	}
 	
+	public void setTelefono(int telefono){
+		this.telefono = telefono;
+	}
+	
+	
 }
