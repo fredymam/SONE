@@ -23,8 +23,7 @@ public class TestCurso {
 		Curso t1;
 		t1 = new Curso (1, 1, "Mañana");
 		
-		c1.asignarc(t2);
-		
+	
 		
 		Curso t2;
 		t2 = new Curso(1, 1, "Mañana");
