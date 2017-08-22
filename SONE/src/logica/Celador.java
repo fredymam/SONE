@@ -8,7 +8,7 @@ public class Celador extends Persona {
 
 	public Celador(String nombre, String apellido, int dni, String correo) {
 		super(nombre, apellido, dni);
-		cursos = new ArrayList<Curso>();
+		setCursos(new ArrayList<Curso>());
 		setCorreo(correo);
 	}
 	
@@ -26,5 +26,13 @@ public class Celador extends Persona {
 	
 	public String enviarNotificacion(){
 		return "g";
+	}
+
+	public ArrayList<Curso> getCursos() {
+		return cursos;
+	}
+
+	public void setCursos(ArrayList<Curso> cursos) {
+		this.cursos = cursos;
 	}
 }
