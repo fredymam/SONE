@@ -17,7 +17,15 @@ public class Alumno extends Persona {
 		this.Curso = curso;
 	}
 	
+	public void InscribirAlumno(Curso curso){
+		this.Curso = curso;
+		
+	}
+	
+	public void EliminarCurso(Curso curso){
+		this.Curso = curso;
+	}
 	
 		
 	}
-}
+
