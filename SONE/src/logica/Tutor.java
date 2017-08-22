@@ -1,28 +1,28 @@
 package logica;
 
 public class Tutor {
-	public String Nombre;
-	public String Apellido; 
-	public String Correo;
+	public String nombre;
+	public String apellido; 
+	public String correo;
 	public int DNI; 
-	public int Tel;  
+	public int tel;  
 	
-	public Tutor (String Nombre, String Apellido, String Correo, int DNI, int Tel){
+	public Tutor (String nombre, String apellido, String correo, int DNI, int tel){
 		
 	}
 	public String getNombre(){
-		return Nombre;
+		return nombre;
 	}
 	public String getApellido(){
-		return Apellido;
+		return apellido;
 	}
 	public String getCorreo(){
-		return Correo;
+		return correo;
 	}
 	public int getDNI(){
 		return DNI;
 	}
 	public int getTel(){
-		return Tel;
+		return tel;
 	}
 }
