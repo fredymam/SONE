@@ -4,8 +4,8 @@ public abstract class Persona {
 	private String nombre;
 	private String apellido;
 	private int DNI;
-	private String email;
-	private int tel;
+	//private String correo;
+	//sprivate int tel;
 	
 	public Persona(String nombre, String apellido, int DNI) {
 				
@@ -23,13 +23,13 @@ public abstract class Persona {
 		return DNI;
 	}
 
-	public String getEmail() {
-		return email;
+	/*public String getCorreo() {
+		return correo;
 	}
 
 	public int getTel() {
 		return tel;
-	}
+	}*/
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -43,12 +43,12 @@ public abstract class Persona {
 		DNI = dNI;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	/*public void setCorreo(String correo) {
+		this.correo = correo;
 	}
 
 	public void setTel(int tel) {
 		this.tel = tel;
-	}
+	}*/
 
 }
