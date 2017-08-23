@@ -29,5 +29,5 @@ public class Alumno extends Persona {
 		this.Curso = curso;
 	}
 		
-	}
+}
 

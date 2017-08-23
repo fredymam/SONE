@@ -3,7 +3,7 @@ package logica;
 public class Profesor {
 
 	protected String Materia;
-	protected String escuela;
+	protected String Escuela;
 	protected int Numero;
 	
 
