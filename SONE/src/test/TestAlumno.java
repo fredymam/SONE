@@ -13,7 +13,8 @@ public class TestAlumno {
 		c2 = new Curso(2, 2, "Tarde");
 		
 		Alumno a1;
-		a1 = new Alumno("amilcar","britos",41185839, c1);
+		a1 = new Alumno("juan","Amores",4123456, c1);
+		
 		System.out.println(a1.getNombre());
 		System.out.println(a1.getApellido());
 		System.out.println(a1.getDni());
@@ -24,7 +25,7 @@ public class TestAlumno {
 		System.out.println("---------------------------------------");
 		
 		Alumno a2;
-		a2 = new Alumno("Juan","Amores",4123456, c2);
+		a2 = new Alumno("amilcar","britos",41185839, c2);
 		System.out.println(a2.getNombre());
 		System.out.println(a2.getApellido());
 		System.out.println(a2.getDni());

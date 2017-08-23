@@ -10,7 +10,5 @@ public class Alumno extends Persona {
 		this.curso = curso;
 	}
 
-
-	
 }
 
