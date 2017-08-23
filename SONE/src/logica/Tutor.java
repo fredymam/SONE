@@ -2,8 +2,6 @@ package logica;
 
 public class Tutor extends Persona {
 	
-	protected char Nombre;	
-	protected char Apellido;
 	protected String Email;
 	protected int Telefono;
 	protected int Dni;
