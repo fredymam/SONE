@@ -43,8 +43,8 @@ public abstract class Persona {
 		DNI = dNI;
 	}
 
-	/*public void setEmail(String email) {
-		this.email = email;
+	/*public void setCorreo(String correo) {
+		this.correo = correo;
 	}
 
 	public void setTel(int tel) {
