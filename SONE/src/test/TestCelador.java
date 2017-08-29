@@ -12,9 +12,9 @@ public class TestCelador {
 		c1.crearCurso(1, 1, "Mañana");
 		c1.crearCurso(2, 2, "Tarde");
 		c1.crearCurso(3, 3, "Vespertino");
+		Curso mañana = c1.buscarCurso(1, 1);
 		
-		c1.buscarCurso(3, 3, "Vespertino");
-		//c1.crearAlumno("Amilcar", "Britos", "41000999", );
+		c1.crearAlumno("Amilcar", "Britos", 41000999, mañana);
 	}
 
 }

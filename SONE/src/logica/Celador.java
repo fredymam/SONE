@@ -35,10 +35,10 @@ public class Celador extends Persona {
 		System.out.println(alumno.getDni());
 	}
 	
-	public Curso buscarCurso(int numero, int division, String turno){
+	public Curso buscarCurso(int numero, int division){
 		Curso resultado = null;
 		for(Curso curso : cursos){
-			if(curso.numero_curso == numero && curso.division == division && curso.turno == turno){
+			if(curso.numero_curso == numero && curso.division == division){
 			    resultado = curso;
 				break;
 			}
