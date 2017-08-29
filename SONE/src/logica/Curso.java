@@ -14,10 +14,12 @@ public class Curso {
 	}
 	public Alumno AgregarAlumno(){
 		
-	
 		ListaAlumnos.add(new Alumno());
 		ListaAlumnos.add(new Alumno());
+		return null;
 	}
 	
-	
+	public void Notificar(double FechaHora, String Mensaje){
+		
+	}
 }
