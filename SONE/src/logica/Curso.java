@@ -1,10 +1,12 @@
 package logica;
+import logica.Celador;
 
 public class Curso {
 	
 	public int numero_curso;
 	public int division;
 	public String turno;
+	public Celador celador;
 	
 	public Curso(int numero_curso,int division, String turno) {
 		this.numero_curso = numero_curso;
