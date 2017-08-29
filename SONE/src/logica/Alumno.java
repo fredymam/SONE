@@ -1,7 +1,9 @@
 package logica;
 
-public class Alumno extends Persona {
+public class Alumno {
 	
+	protected String Nombre;
+	protected String Apellido;
 	protected int Curso;
 	protected String Division;
 	protected String Turno;
