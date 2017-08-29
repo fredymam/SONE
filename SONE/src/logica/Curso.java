@@ -7,13 +7,17 @@ public class Curso {
 	protected String Division;
 	protected String Turno;
 	protected ArrayList<Alumno> ListaAlumnos;
-	protected Curso() {
+	public Curso() {
+		
 		ListaAlumnos = new ArrayList<Alumno>();
-		ListaAlumnos.add(new Alumno());
+		
+	}
+	public Alumno AgregarAlumno(){
+		
+	
 		ListaAlumnos.add(new Alumno());
 		ListaAlumnos.add(new Alumno());
 	}
-	
 	
 	
 }
