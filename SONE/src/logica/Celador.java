@@ -3,6 +3,7 @@ package logica;
 import java.util.ArrayList;
 
 public class Celador extends Persona {
+	private int Num_celador; // IMPORTANTE : variable creada por nico para creacion de getter y setter
 	public ArrayList<Curso> listacurso;
 	public ArrayList<Alumno>listaalumnos;
 	
@@ -15,12 +16,20 @@ public class Celador extends Persona {
 		
 	}
 	
-	public int Cantalumnos(){
+	public int Cantalumnos(){     
 		return listaalumnos.size();
 	}
 	
 	public void Tutor(){
 		
+	}
+
+	public int getNum_celador() {
+		return Num_celador;
+	}
+
+	public void setNum_celador(int num_celador) {
+		Num_celador = num_celador;
 	}
 }
 
