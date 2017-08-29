@@ -15,7 +15,7 @@ public class TestApp {
 		// Se agregan alumnos nuevos a la division
 		curso.AgregarAlumno(1,"Wilhelm", "Steinitz"); // DNI, Nombre, Apellido
 		curso.AgregarAlumno(2,"Emanuel", "Lasker");
-		curso.AgregarAlumno(3,"Jose Raúl",|"Capablanca");
+		curso.AgregarAlumno(3,"Jose Raúl","Capablanca");
 		curso.AgregarAlumno(4,"Max", "Euwe");
 		curso.AgregarAlumno(5,"Mikhail", "Botvinnik");
 		curso.AgregarAlumno(6,"Vasily","Smyslov");
@@ -23,7 +23,7 @@ public class TestApp {
 		// Escuela.BuscarCurso(7,1).AgregarAlumno(); // equivalente a las líneas superiores. >> curso, se utiliza como un shortcut
 		curso.Inasistencia(4);
 		curso.Inasistencia(7);
-		curso.Notificar('01-08-2017 10:40',"Alumnos se retiran antes, porque falta profe de geografía");
+		curso.Notificar("01-08-2017 10:40", "Alumnos se retiran antes, porque falta profe de geografía");
 		
 		/*
 		 * Por consola, se debería visualizar una lista de los tutores notificados>
