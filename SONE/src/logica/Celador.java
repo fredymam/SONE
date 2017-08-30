@@ -5,7 +5,7 @@ import logica.Curso;
 public class Celador extends Persona {
 	
 	public ArrayList<Curso> cursos;
-	private ArrayList<Alumno> alumnos; 
+	public ArrayList<Alumno> alumnos; 
 
 	public Celador(String nombre, String apellido, int dni, String correo) {
 		super(nombre, apellido, dni);
@@ -26,13 +26,11 @@ public class Celador extends Persona {
 	}
 	
 	public void cursoAlta(Curso curso){
-		this.cursos.add(curso);
+		cursos.add(curso);
 	}
 	
 	public void alumnoAlta(Alumno alumno){
-		System.out.println(alumno.getNombre());
-		System.out.println(alumno.getApellido());
-		System.out.println(alumno.getDni());
+		alumnos.add(alumno);
 	}
 	
 	public Curso buscarCurso(int numero, int division){
