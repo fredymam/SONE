@@ -5,10 +5,10 @@ public class Celador {
 	
 	protected String Nombre;
 	protected String Apellido;
-	protected Curso curso;
+	
 	
 	public Celador(){
-		curso = new Curso();
+		
 	}
 	public String PromoverAlumno(){
 		curso.ListaAlumnos.get();

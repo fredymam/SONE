@@ -1,4 +1,5 @@
 package test;
+import logica.*;
 /* Esqueleto tentativo para modelar los servicios de las diferentes clases 
  * 
  */
@@ -23,7 +24,7 @@ public class TestApp {
 		// Escuela.BuscarCurso(7,1).AgregarAlumno(); // equivalente a las líneas superiores. >> curso, se utiliza como un shortcut
 		curso.Inasistencia(4);
 		curso.Inasistencia(7);
-		curso.Notificar('01-08-2017 10:40',"Alumnos se retiran antes, porque falta profe de geografía");
+		//curso.Notificar('01-08-2017 10:40',"Alumnos se retiran antes, porque falta profe de geografía");
 		
 		/*
 		 * Por consola, se debería visualizar una lista de los tutores notificados>
