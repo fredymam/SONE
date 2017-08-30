@@ -6,10 +6,22 @@ public class Alumno extends Persona{
 	private int División;
 	private String Turno;
 	private Tutor Tutor;
+	private static int id_alumno;
 	
 	
+	public static int getId_alumno() {
+		return id_alumno;
+	}
+
+
+	public static void setId_alumno(int id_alumno) {
+		Alumno.id_alumno = id_alumno;
+	}
+
+
 	public Alumno(String nombre,String apellido, int dni) {
 		super(nombre,apellido,dni);
+		id_alumno++;
 	}
 	
 	

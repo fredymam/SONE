@@ -2,10 +2,19 @@ package logica;
 import java.util.ArrayList;
 
 public class Curso {
-	private ArrayList<Alumno> alumnos;
+	protected ArrayList<Alumno> alumnos;
 	private int curso;
 	private int division;
-	private int celador;
+	private Celador celador;
+	private int CantAlumnos;
+	public int getCantAlumnos() {
+		return CantAlumnos;
+	}
+
+	public void setCantAlumnos(int cantAlumnos) {
+		CantAlumnos = cantAlumnos;
+	}
+
 	private char turno; // M T V
 	
 	
@@ -23,7 +32,13 @@ public class Curso {
 	public void setAlumnos(ArrayList<Alumno> alumnos) {
 		this.alumnos = alumnos;
 	}
-
+	
+	public String getAlumno(int i){
+		Alumno alumno = alumnos.get(i);
+		
+		return alumno.getApellido() + " " + alumno.getNombre() + " " + alumno.getDNI();
+	}
+	
 	public int getCurso() {
 		return curso;
 	}
@@ -40,13 +55,7 @@ public class Curso {
 		this.division = division;
 	}
 
-	public int getCelador() {
-		return celador;
-	}
 
-	public void setCelador(int celador) {
-		this.celador = celador;
-	}
 
 	public char getTurno() {
 		return turno;
@@ -57,19 +66,29 @@ public class Curso {
 	}
 
 	void AsignarCelador(Celador cel){
-		celador = cel.getId_celador();
+		celador = cel;
 	}
 	
-	boolean Notificar(){
+	public Celador getCelador() {
+		return celador;
+	}
+
+	public void setCelador(Celador celador) {
+		this.celador = celador;
+	}
+
+	public boolean Notificar(){
 		return true;
 	}
 	
-	void AgregarAlumno(Alumno a){
+	public void AgregarAlumno(Alumno a){
 		alumnos.add(a);
+		CantAlumnos++;
 	}
 	
-	boolean Quitar(Alumno a){
+	public boolean Quitar(Alumno a){
 		alumnos.remove(a);
+		CantAlumnos--;
 		return true;
 	}
 	
