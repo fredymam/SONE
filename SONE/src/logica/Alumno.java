@@ -13,13 +13,7 @@ public class Alumno extends Persona{
 	}
 	
 	
-	public void asignarCurso(Curso c){
-		if(EsteCurso != null){
-			EsteCurso.Quitar(this);
-		}
-		EsteCurso = c;
-		EsteCurso.AgregarAlumno(this);
-	}
+
 	
 	public Tutor getTutor() {
 		return Tutor;

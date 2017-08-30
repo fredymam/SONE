@@ -61,7 +61,7 @@ public class Curso {
 		celador = cel.getNum_celador();
 	}
 	
-	boolean Notificar(){
+	public boolean Notificar(String Data, String Motivo){
 		return true;
 	}
 	
@@ -72,6 +72,16 @@ public class Curso {
 	boolean Quitar(Alumno a){
 		alumnos.remove(a);
 		return true;
+	}
+
+	public void AgregarAlumno(int DNI, String Nombre, String Apellido) {
+		
+		
+	}
+
+	public void Inasistencia(int Faltas) {
+		
+		
 	}
 	
 	
