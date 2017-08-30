@@ -9,6 +9,8 @@ public class Tutor extends Persona {
 	private boolean Notificar_SMS;
 	
 	
+	
+
 	public Tutor(String nombre, String apellido, int dni) {
 		super(nombre, apellido, dni);
 		}
@@ -42,7 +44,35 @@ public class Tutor extends Persona {
 			N_Celular = n_Celular;
 		}
 
-		
+		public boolean isNotificar_email() {
+			return Notificar_email;
+		}
+
+		public void setNotificar_email(boolean notificar_email) {
+			Notificar_email = notificar_email;
+		}
+
+		public boolean isNotificar_SMS() {
+			return Notificar_SMS;
+		}
+
+		public void setNotificar_SMS(boolean notificar_SMS) {
+			Notificar_SMS = notificar_SMS;
+		}
 	
+		public void H_D_email(){
+			if(Notificar_email== true){
+				Notificar_email=false;
+			}else {
+				Notificar_email= true;
+			}
+		}
 		
+		public void H_D_SMS(){
+			if (Notificar_SMS==true){
+				Notificar_SMS=false;
+			}else {
+				Notificar_SMS=true;
+			}
+		}
 }
