@@ -1,16 +1,25 @@
 package logica;
 
 public class Colegio {
-	private String nombre;
-	private int cue;
-	private int tel;
-	private String correo;
 	
-	public Colegio(){
+	protected int CUE;
+	protected String Nombre;
+	
+	public Colegio(int CUE,String Nombre){
+		
+		this.CUE = CUE ;
+		this.Nombre = Nombre;
+		
+		
 		
 	}
-	
-	public void RegistroCelador(){
+	public void AgregarCurso(Curso c){
+		curso.add(c);
 		
+
+	}
+	public static Curso BuscarCurso(int Año, int Division) {
+		
+		return null;
 	}
 }
