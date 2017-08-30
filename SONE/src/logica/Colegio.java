@@ -13,13 +13,12 @@ public class Colegio {
 		
 		
 	}
-	public void AgregarCurso(Curso c){
-		curso.add(c);
-		
-
-	}
 	public static Curso BuscarCurso(int Año, int Division) {
 		
 		return null;
+	}
+	public static void AgregarCurso(int Año, int Division) {
+		
+		
 	}
 }

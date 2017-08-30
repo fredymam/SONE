@@ -1,6 +1,7 @@
 package test;
 
 import logica.Colegio;
+import logica.Curso;
 
 /* Esqueleto tentativo para modelar los servicios de las diferentes clases 
  * 
@@ -10,7 +11,7 @@ public class TestApp {
 	public static void main(String[] args) {
 		//1. login >> autenticación de usuario para utilizar el sistema
 		//2. Cargar datos de escuela desde Base de Datos
-		Colegio escuela = new Colegio(420014400,"EPET N° 3"); // CUE,Nombre
+		Colegio colegio = new Colegio(420014400,"EPET N° 3"); // CUE,Nombre
 		// Se agregan cursos nuevos
 		Colegio.AgregarCurso(7,1); // Año, Division
 		Colegio.AgregarCurso(7,2);
