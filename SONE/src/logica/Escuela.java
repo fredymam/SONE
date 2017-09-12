@@ -23,10 +23,11 @@ public class Escuela {
 		ListaCursos.add(curso);	
 	}
 	
-	//public Curso BuscarCurso(int Año, int Division){
-		//this.Año = Año;
-		//this.Division = Division;
-	//}
+	public Curso BuscarCurso(int Año, int Division){
+		this.Año = Año;
+		this.Division = Division;
+		
+	}
 	
 	
 }
