@@ -8,26 +8,38 @@ public abstract class Persona {
 	protected int dni;
 	protected int telefono;
 
-	public Persona(String nombre, String apellido ,int dni){
+	public Persona(String nombre, String apellido ,int dni, String correo, int telefono){
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;	
+		this.correo = correo;
+		this.telefono = telefono;
 	}
 	
+	
+
+	public Persona(String nombre2, String apellido2, int dni2, String correo2) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public int getTelefono() {
 		return telefono;
 	}
 	
-	public int getDni() {
+	public int getdni(String string) {
 		return dni;
 	}
 
-	public void setDni(int dni) {
-		this.dni = dni;
+	public boolean setdni(int string) {
+		this.dni = string;
+		return false;
 	}
 
-	public String getNombre(){
-		return this.nombre;
+	public char[] getnombre1(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	public String getApellido(){
@@ -45,6 +57,35 @@ public abstract class Persona {
 	public void setTelefono(int telefono){
 		this.telefono = telefono;
 	}
+
+
+	public char[] getnombre(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public char[] getapellido(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public char[] getcorreo(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	public char[] getapellido2(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+
+
 	
 
 
