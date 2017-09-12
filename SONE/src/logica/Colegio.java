@@ -1,24 +1,29 @@
 package logica;
 
-public class Colegio {
-	
+import java.util.ArrayList;
+
+public class Colegio {	
 	protected int CUE;
 	protected String Nombre;
+	protected ArrayList<Curso> ListaCursos;
 	
 	public Colegio(int CUE,String Nombre){
-		
+		ListaCursos = new ArrayList<Curso>();
 		this.CUE = CUE ;
 		this.Nombre = Nombre;
-		
-		
-		
+			
 	}
-	public static Curso BuscarCurso(int Año, int Division) {
-		
+	
+	public Curso BuscarCurso(int Año, int Division) {
 		return null;
 	}
-	public static void AgregarCurso(int Año, int Division) {
-		
+	
+	public void AgregarCurso(int Curso, int Division, char Turno) {
+		Curso c1 = new Curso(Curso, Division, Turno);  
+		ListaCursos.add(c1);
+	}
+	
+	public void AgregarAlumno(){
 		
 	}
 }

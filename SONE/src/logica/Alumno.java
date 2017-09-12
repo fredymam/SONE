@@ -11,10 +11,7 @@ public class Alumno extends Persona{
 	public Alumno(String nombre,String apellido, int dni) {
 		super(nombre,apellido,dni);
 	}
-	
-	
-
-	
+		
 	public Tutor getTutor() {
 		return Tutor;
 	}

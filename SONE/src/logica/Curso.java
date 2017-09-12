@@ -10,11 +10,11 @@ public class Curso {
 	
 	
 	
-	public Curso(int c, int d, char t) {
+	public Curso(int curso, int division, char turno) {
 		alumnos = new ArrayList<Alumno>();
-		curso = c;
-		division = d;
-		turno = t;
+		this.curso = curso;
+		this.division = division;
+		this.turno = turno;
 	}
 	
 	public ArrayList<Alumno> getAlumnos() {
@@ -65,7 +65,7 @@ public class Curso {
 		return true;
 	}
 	
-	void AgregarAlumno(Alumno a){
+	public void AgregarAlumno(Alumno a){
 		alumnos.add(a);
 	}
 	
@@ -76,6 +76,7 @@ public class Curso {
 
 	public void AgregarAlumno(int DNI, String Nombre, String Apellido) {
 		
+		System.out.println("probando");
 		
 	}
 
