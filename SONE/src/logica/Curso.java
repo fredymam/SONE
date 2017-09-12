@@ -10,13 +10,14 @@ public class Curso {
 	protected int Division;
 	protected String Turno;
 	protected ArrayList<Alumno> ListaAlumnos;
+	
 	public Curso(int Curso, int Division) {
 		this.Curso = Curso;
 		this.Division = Division;
 		ListaAlumnos = new ArrayList<Alumno>();
 		
 	}
-	public Alumno AgregarAlumno(String Nombre, String Apellido, int DNI){
+	public Alumno AgregarAlumno(int DNI, String Nombre, String Apellido){
 		this.Nombre = Nombre;
 		this.Apellido = Apellido;
 		this.DNI = DNI;

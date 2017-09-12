@@ -19,12 +19,14 @@ public class Escuela {
 	public void AgregarCurso(int Año, int Division){
 		this.Año = Año;
 		this.Division = Division;
-		Curso curso = new Curso();
-		ListaCursos.add(curso);
-		
-		
-		
-		
-		
+		Curso curso = new Curso(7,1);
+		ListaCursos.add(curso);	
 	}
+	
+	//public Curso BuscarCurso(int Año, int Division){
+		//this.Año = Año;
+		//this.Division = Division;
+	//}
+	
+	
 }

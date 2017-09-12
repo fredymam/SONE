@@ -10,9 +10,9 @@ public class TestApp {
 		//2. Cargar datos de escuela desde Base de Datos
 		Escuela escuela = new Escuela(420014400,"EPET N° 3"); // CUE,Nombre
 		// Se agregan cursos nuevos
-		Escuela.AgregarCurso(7,1); // Año, Division
-		Escuela.AgregarCurso(7,2);
-		Curso curso = Escuela.BuscarCurso(7,1); // Metodo que busca un curso y devuelve el objeto.
+		escuela.AgregarCurso(7,1); // Año, Division
+		escuela.AgregarCurso(7,2);
+		Curso curso = escuela.BuscarCurso(7,1); // Metodo que busca un curso y devuelve el objeto.
 		// Se agregan alumnos nuevos a la division
 		curso.AgregarAlumno(1,"Wilhelm", "Steinitz"); // DNI, Nombre, Apellido
 		curso.AgregarAlumno(2,"Emanuel", "Lasker");
