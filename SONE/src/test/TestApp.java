@@ -15,7 +15,7 @@ public class TestApp {
 		// Se agregan alumnos nuevos a la division
 		curso.AgregarAlumno(1,"Wilhelm", "Steinitz"); // DNI, Nombre, Apellido
 		curso.AgregarAlumno(2,"Emanuel", "Lasker");
-		curso.AgregarAlumno(3,"Jose Raúl",|"Capablanca");
+		curso.AgregarAlumno(3,"Jose Raúl","Capablanca");
 		curso.AgregarAlumno(4,"Max", "Euwe");
 		curso.AgregarAlumno(5,"Mikhail", "Botvinnik");
 		curso.AgregarAlumno(6,"Vasily","Smyslov");
