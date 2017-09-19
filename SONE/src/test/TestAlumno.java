@@ -33,6 +33,4 @@ public class TestAlumno {
 		System.out.println(a2.curso.getDivision());
 		System.out.println(a2.curso.getNumero_curso());
 	}
-	
-
 }

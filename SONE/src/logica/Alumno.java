@@ -1,4 +1,5 @@
 package logica;
+import logica.Curso;
 
 public class Alumno extends Persona {
  
@@ -9,6 +10,5 @@ public class Alumno extends Persona {
 		super(nombre, apellido, dni);
 		this.curso = curso;
 	}
-
 }
 

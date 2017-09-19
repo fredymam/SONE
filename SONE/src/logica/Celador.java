@@ -6,17 +6,11 @@ public class Celador extends Persona {
 	
 	public ArrayList<Curso> cursos;
 	public ArrayList<Alumno> alumnos;
-	private Persona a3; 
 
-	public Celador(String nombre2, String apellido2, int dni2, String correo2) {
-		super(nombre2, apellido2, dni2, correo2 );
-		a3 = null;
-		System.out.println(a3.getnombre(""));
-		System.out.println(a3.getapellido2(""));
-		System.out.println(a3.getdni(""));
-		System.out.println(a3.getcorreo(""));
-		
+	public Celador(String nombre, String apellido, int dni) {
+		super(nombre, apellido, dni);
 		setCorreo(correo);
+		setTelefono(telefono);
 		setCursos(new ArrayList<Curso>());
 		setAlumnos(new ArrayList<Alumno>());
 		

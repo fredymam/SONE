@@ -1,17 +1,14 @@
 package test;
-
 import logica.Alumno;
 import logica.Celador;
 import logica.Curso;
 
-//c1.asignarc(t2);
 public class TestCurso {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Celador c1;
-		c1 = new Celador("EDGAR", "ROLDAN", 41185839, "celador@celador.com");
+		c1 = new Celador("EDGAR", "ROLDAN", 41185839);
 		System.out.println(c1.getNombre());
 		System.out.println(c1.getApellido());
 		System.out.println(c1.getDni());
@@ -19,12 +16,8 @@ public class TestCurso {
 		
 		System.out.println("---------------------------------------");
 		
-		
 		Curso t1;
 		t1 = new Curso (1, 1, "Mañana");
-		
-	
-		
 		
 		Curso t2;
 		t2 = new Curso(1, 1, "Mañana");

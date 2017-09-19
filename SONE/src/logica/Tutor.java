@@ -9,7 +9,7 @@ public class Tutor extends Persona {
 	private ArrayList<Alumno> alumnos;
 	
 	
-	public Tutor(String nombre, String apellido, int dni, String correo, int telefono) {
+	public Tutor(String nombre, String apellido, int dni) {
 		super(nombre, apellido, dni);
 		setCorreo(correo);
 		setAlumnos(new ArrayList<Alumno>());
