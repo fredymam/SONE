@@ -8,7 +8,8 @@ public class Curso {
 	protected int DNI;
 	protected int Curso;
 	protected int Division;
-	protected String Turno;
+	protected int Año;
+	protected char Turno;
 	protected ArrayList<Alumno> ListaAlumnos;
 	
 	public Curso(int Curso, int Division) {
@@ -28,5 +29,47 @@ public class Curso {
 	
 	public void Notificar(double FechaHora, String Mensaje){
 		
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public int getDNI() {
+		return DNI;
+	}
+	public void setDNI(int dNI) {
+		DNI = dNI;
+	}
+	public int getCurso() {
+		return Curso;
+	}
+	public void setCurso(int curso) {
+		Curso = curso;
+	}
+	public int getDivision() {
+		return Division;
+	}
+	public void setDivision(int division) {
+		Division = division;
+	}
+	public char getTurno() {
+		return Turno;
+	}
+	public void setTurno(char turno) {
+		Turno = turno;
+	}
+	public void setAño(int año) {
+		Año = año;
+	}
+	public int getAño() {
+		return Año;
 	}
 }

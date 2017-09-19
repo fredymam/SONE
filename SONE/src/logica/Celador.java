@@ -11,7 +11,7 @@ public class Celador {
 		
 	}
 	public String PromoverAlumno(){
-		curso.ListaAlumnos.get();
+		Curso.ListaAlumnos.get();
 	}
 
 	public String ModificarAlumno(){

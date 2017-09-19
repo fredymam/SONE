@@ -7,6 +7,7 @@ public class Escuela {
 	protected String Nombre;
 	protected int Año;
 	protected int Division;
+	protected char Turno;
 	protected ArrayList<Curso> ListaCursos;
 	
 	
@@ -20,14 +21,17 @@ public class Escuela {
 		this.Año = Año;
 		this.Division = Division;
 		Curso curso = new Curso(7,1);
-		ListaCursos.add(curso);	
+		ListaCursos.add(curso);
+	}
+
+	public Curso BuscarCurso(int Año, int Division, char Turno){
+		Curso resultado = null;
+		for(Curso curso:ListaCursos){
+			if (curso.getAño()==Curso && curso.getDivision()==Curso && curso.getTurno()==Curso){
+	}
+		 return resultado;
 	}
 	
-	public Curso BuscarCurso(int Año, int Division){
-		this.Año = Año;
-		this.Division = Division;
-		
-	}
 	
-	
+}
 }
