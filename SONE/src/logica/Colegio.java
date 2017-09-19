@@ -14,8 +14,15 @@ public class Colegio {
 			
 	}
 	
-	public Curso BuscarCurso(int Año, int Division) {
-		return null;
+	public Curso BuscarCurso(int Curso, int Division, char Turno) {
+		Curso resultado = null;		
+		for(Curso C:ListaCursos){
+			if(C.getCurso()==Curso && C.getDivision()==Division && C.getTurno()==Turno){
+				resultado = C;				
+				break;
+			}						
+		}
+		return resultado;
 	}
 	
 	public void AgregarCurso(int Curso, int Division, char Turno) {
