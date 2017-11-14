@@ -2,6 +2,9 @@ package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -14,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.DAO.CursoDAO;
 import model.logic.Curso;
+import model.logic.NotificacionMAIL;
 
 @WebServlet("/CursoServlet")
 public class CursoServlet extends HttpServlet {
@@ -59,6 +63,9 @@ public class CursoServlet extends HttpServlet {
 				break;
 			case "eliminar":
 				eliminar(request, response);
+				break;
+			case "notificar":
+				notificar(request, response);
 				break;
 			default:
 				break;
@@ -125,6 +132,17 @@ public class CursoServlet extends HttpServlet {
 		cursoDao.eliminar(curso);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/curso/mostrar.jsp");
 		dispatcher.forward(request, response);
-		
+	}
+	
+	private void notificar(HttpServletRequest request, HttpServletResponse response) throws ParseException {
+	    //agregar control de parametros nulos
+		NotificacionMAIL notificar = new NotificacionMAIL(); // hint: usar interface
+		SimpleDateFormat parseFecha = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+		notificar.setFecha(parseFecha.parse(request.getParameter("fecha")));
+		notificar.setMensaje(request.getParameter("mensaje"));
+	//	notificar.setVencimiento();
+	//	notificar.setAlumnos(alumnos);
+		notificar.Notificar();
+	//  redireccionar a una pagina	
 	}
 }
