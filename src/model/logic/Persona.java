@@ -1,11 +1,10 @@
 package model.logic;
 
-public abstract class Persona {
-	
+public abstract class Persona {	
+	protected int dni;
 	protected String nombre;
 	protected String apellido;
 	protected String correo;
-	protected int dni;
 	protected int telefono;
 
 	public Persona(String nombre, String apellido ,int dni){

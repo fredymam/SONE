@@ -2,10 +2,10 @@ package model.logic;
 import java.util.ArrayList;
 
 public class Escuela {
-	public static ArrayList<Curso> cursos;
-	public ArrayList<Alumno> alumnos; 
-	public int cue;
-	public String nombre_escuela;
+	private ArrayList<Curso> cursos;
+	private ArrayList<Alumno> alumnos; 
+	private int cue;
+	private String nombre_escuela;
 	
 	public Escuela(int cue, String nombre_escuela){
 		this.cue = cue;
@@ -20,17 +20,18 @@ public class Escuela {
 		return nombre_escuela;
 	}
 	
-	public static void crearCurso(int numero_curso, int division, String turno){
+	public void crearCurso(int numero_curso, int division, String turno){
 		Curso curso = new Curso(numero_curso, division, turno);
 		cursoAlta(curso);
 	}
 	
 	public void crearAlumno(String nombre, String apellido, int dni, Curso curso){
-		Alumno alumno = new Alumno(nombre, apellido, dni, curso);
+		Alumno alumno = new Alumno(nombre, apellido, dni);
+		alumno.setCurso(curso);
 		alumnoAlta(alumno);
 	}
 	
-	public static void cursoAlta(Curso curso){
+	public void cursoAlta(Curso curso){
 		cursos.add(curso);
 	}
 	
@@ -38,7 +39,7 @@ public class Escuela {
 		alumnos.add(alumno);
 	}
 	
-	public static Curso buscarCurso(int numero, int division){
+	public Curso buscarCurso(int numero, int division){
 		Curso resultado = null;
 		for(Curso curso : cursos){
 			if(curso.numero_curso == numero && curso.division == division){

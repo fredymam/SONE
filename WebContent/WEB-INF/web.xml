@@ -3,14 +3,14 @@
   <display-name>SONE WEB</display-name>
   <context-param>
     <param-name>jdbcURL</param-name>
-    <param-value>jdbc:mysql://localhost:3306/sone</param-value>
+    <param-value>jdbc:mysql://172.16.17.66:3306/SONE</param-value>
   </context-param>
   <context-param>
     <param-name>jdbcUsername</param-name>
-    <param-value>root</param-value>
+    <param-value>dbmaster</param-value>
   </context-param>
   <context-param>
     <param-name>jdbcPassword</param-name>
-    <param-value></param-value>
+    <param-value>123</param-value>
   </context-param>
 </web-app>

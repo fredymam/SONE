@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
@@ -86,7 +84,7 @@ public class CursoServlet extends HttpServlet {
 	}
 	
 	private void nuevo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/curso/register.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/vistas/curso/register.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -102,7 +100,7 @@ public class CursoServlet extends HttpServlet {
 	}
 	
 	private void mostrar(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException , ServletException{
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/curso/mostrar.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/vistas/curso/mostrar.jsp");
 		Map<Integer, Curso> listaCursos = cursoDao.listarCursos();
 		request.setAttribute("cursos", listaCursos);
 		dispatcher.forward(request, response);
@@ -113,7 +111,7 @@ public class CursoServlet extends HttpServlet {
 		request.setAttribute("curso", curso);
 		request.setAttribute("id", Integer.parseInt(request.getParameter("id")));
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/curso/editar.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/vistas/curso/editar.jsp");
 		dispatcher.forward(request, response);
 	}
 	
@@ -130,15 +128,17 @@ public class CursoServlet extends HttpServlet {
 	private void eliminar(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException{
 		Curso curso = cursoDao.obtenerPorId(Integer.parseInt(request.getParameter("curso")));
 		cursoDao.eliminar(curso);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/curso/mostrar.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/vistas/curso/mostrar.jsp");
 		dispatcher.forward(request, response);
 	}
 	
-	private void notificar(HttpServletRequest request, HttpServletResponse response) throws ParseException {
+	private void notificar(HttpServletRequest request, HttpServletResponse response) {
 	    //agregar control de parametros nulos
 		NotificacionMAIL notificar = new NotificacionMAIL(); // hint: usar interface
 		SimpleDateFormat parseFecha = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
-		notificar.setFecha(parseFecha.parse(request.getParameter("fecha")));
+		try {
+		  notificar.setFecha(parseFecha.parse(request.getParameter("fecha")));		    
+		} catch (ParseException e) { e.printStackTrace(); }	
 		notificar.setMensaje(request.getParameter("mensaje"));
 	//	notificar.setVencimiento();
 	//	notificar.setAlumnos(alumnos);

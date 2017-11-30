@@ -10,8 +10,8 @@
 <body>
 <h1>Actualizar Curso</h1>
 	<form action="CursoServlet?action=editar" method="post">
-		<table>
-			<input type="hidden" name="id" value='<c:out value="${id}"></c:out>'>
+		<input type="hidden" name="id" value='<c:out value="${id}"></c:out>'>
+		<table>			
 			<tr>
 				<td><label>Curso</label></td>
 				<td><input type="text" name="numero_curso" value='<c:out value="${curso.numero_curso}"></c:out>'></td>

@@ -31,11 +31,6 @@
 	<table border="0" align="center">
 		<tr>
 			<td><input type="submit" value="Agregar" name="agregar"></td>
-			<td>
-				<button>
-					<a type="button" href="CursoServlet?action=index">Inicio</a>
-				</button>
-			</td>
 		</tr>
 	</table>
 	</form>

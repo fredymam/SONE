@@ -17,7 +17,7 @@ public class Tutor extends Persona {
 	}
 
 	private void setAlumnos(ArrayList<Alumno> arrayList) {
-		// TODO Auto-generated method stub
+
 	}
 
 	public ArrayList<Alumno> getAlumnos() {

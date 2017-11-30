@@ -10,22 +10,21 @@
 	<h1>AGREGAR ESCUELA</h1>
 	<form action="EscuelaServlet?action=registrar" method="post">
 		<table border="1" align="center">
-		<tr>
-			<td>C.U.E:</td>		
-			<td><input type="text" name="cue"/></td>	
-		</tr>
-		<tr>
-			<td>Nombre Escuela:</td>		
-			<td><input type="text" name="nombre_escuela"/></td>	
-		</tr>		
-		
-	</table>
-	<br>
-	<table border="0" align="center">
-		<tr>
-		<td><input type="submit" value="Agregar" name="agregar"></td>	
-		</tr>
-	
+			<tr>
+				<td>C.U.E:</td>		
+				<td><input type="text" name="cue"/></td>	
+			</tr>
+			<tr>
+				<td>Nombre Escuela:</td>		
+				<td><input type="text" name="nombre_escuela"/></td>	
+			</tr>			
+		</table>
+		<br>
+		<table border="0" align="center">
+			<tr>
+			<td><input type="submit" value="Agregar" name="agregar"></td>	
+			</tr>
+		</table>
 	</form>
 </body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<center><h1>Registrar Alumno</h1></center>
-	<form action="/SONEWEB/Servlet?action=registrar" method="post">
+	<form action="/soneweb/Servlet?action=registrar" method="post">
 		<table border="1" align="center">
 		<tr>
 			<td>Nombre:</td>		

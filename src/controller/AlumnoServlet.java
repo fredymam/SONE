@@ -2,7 +2,7 @@ package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
+import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -35,7 +35,6 @@ public class AlumnoServlet extends HttpServlet {
    
     public AlumnoServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -67,7 +66,6 @@ public class AlumnoServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 		
 	}
@@ -76,15 +74,18 @@ public class AlumnoServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 	private void registrar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-		Alumno alumno = new Alumno(request.getParameter("nombre"), request.getParameter("apellido"), 1);
+		String nombre = request.getParameter("nombre");
+		String apellido = request.getParameter("apellido");
+		int dni = Integer.parseInt(request.getParameter("dni"));		
+		Alumno alumno = new Alumno(nombre,apellido,dni);
 		alumnoDAO.insertar(alumno);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		dispatcher.forward(request, response);
 	}
-	private void mostrar(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException , ServletException{
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/vista/mostrar.jsp");
-		List<Alumno> listarAlumnos= alumnoDAO.listarAlumnos();
-		System.out.println("aca funca");
+	
+	private void mostrar(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException{
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/vistas/alumno/mostrar.jsp");
+		Map<Integer,Alumno> listarAlumnos = alumnoDAO.listarAlumnos();
 		request.setAttribute("lista", listarAlumnos);
 		dispatcher.forward(request, response);
 	}	
